@@ -1,0 +1,19 @@
+.hero {
+  &__text-box {
+    position: absolute;
+    bottom: 20rem;
+    left: 4rem;
+
+    width: 40%;
+    padding: 4rem;
+    border-radius: 11px;
+    background-color: rgba($color-primary-light, 0.8);
+
+    &__text {
+      margin: 2rem 0;
+      font-size: 2rem;
+      font-weight: 500;
+      color: $color-black;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.about__image-box {
+  padding: 0 4rem;
+  &__img {
+    display: inline-block;
+    width: 100%;
+    border-radius: 9px;
+  }
+}
+
+.about__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  &__segment {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 3rem;
+    background-color: rgba($color-secondary, 0.2);
+    border-radius: 9px;
+
+    & ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+}
