@@ -175,6 +175,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
 }
 .treatment__text-box {
   padding: 1.2rem 2rem;
@@ -182,10 +183,15 @@ body {
   border-radius: 11px;
   width: 75%;
   text-align: center;
+  transition: all 0.3s;
   position: absolute;
   left: 50%;
   bottom: -5%;
-  transform: translate(-50%, -5%);
+  transform: translate(-50%, -5%) scale(1);
+}
+.treatment__text-box:hover {
+  transform: translate(-50%, -5%) scale(1.05);
+  cursor: pointer;
 }
 
 .section-hero {
