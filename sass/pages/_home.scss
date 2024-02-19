@@ -7,14 +7,21 @@
       rgba($color-primary-gradient-light, 0.7) 50%,
       rgba($color-primary-gradient-dark, 0.4) 100%
     ),
-    url(../../img/22.jpg);
+    url(../../img/hero.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .section-about {
   padding: 6rem;
-  background-color: $color-white;
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-white, 1),
+      rgba($color-white, 0.8)
+    ),
+    url(../../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
 
   &__main {
     display: grid;
@@ -32,4 +39,34 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
   }
+}
+
+.section-examples {
+  padding: 6rem;
+  background-color: $color-white;
+
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+}
+
+.section-testimonials {
+  padding: 6rem;
+  height: 80rem;
+  background-color: $color-white;
+  position: relative;
+}
+
+.section-contact {
+  padding: 16rem;
+  background-image: linear-gradient(
+      110deg,
+      rgba($color-primary-gradient-light, 0.8),
+      rgba($color-primary-gradient-light, 0.7)
+    ),
+    url(../../img/3.jpg);
+  background-size: cover;
+  background-position: center;
 }

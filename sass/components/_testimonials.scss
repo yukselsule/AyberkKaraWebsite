@@ -1,0 +1,81 @@
+.wrapper {
+  background-image: linear-gradient(
+    to bottom,
+    rgba($color-primary-gradient-light, 0.4),
+    rgba($color-primary-gradient-dark, 0.4)
+  );
+  position: absolute;
+  width: 80rem;
+  height: 40rem;
+  border-radius: 11px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  box-shadow: 0 1rem 3rem rgba($color-black, 0.15);
+  display: flex;
+
+  & button {
+    font-size: 3rem;
+    height: 4.4rem;
+    width: 4.4rem;
+    background-color: #ffffff;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    color: $color-primary-dark;
+    box-shadow: 0 0 1rem rgba($color-black, 0.25);
+    cursor: pointer;
+    border-radius: 50%;
+
+    &#next {
+      right: -1.1em;
+    }
+
+    &#prev {
+      left: -1.1em;
+    }
+  }
+}
+.testimonial-container {
+  width: 85%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  padding: 1rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & p {
+    color: $color-grey-dark;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  & img {
+    display: block;
+    margin: 1rem auto 1rem auto;
+    border-radius: 50%;
+    width: 6rem;
+  }
+
+  & h3 {
+    color: #2d3d67;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  & h6 {
+    color: #bcc4da;
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    text-align: center;
+  }
+}
