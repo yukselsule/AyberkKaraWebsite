@@ -105,21 +105,26 @@ body {
   transform: translateY(0);
 }
 
-.contact-text-box {
+.cta-text-box {
   display: flex;
   flex-direction: column;
   gap: 4rem;
   align-items: center;
   justify-content: center;
 }
-.contact-text-box__text {
-  font-size: 6rem;
+.cta-text-box__text {
+  font-size: 2.4rem;
   color: #003049;
+  text-align: center;
 }
-.contact-text-box__link {
+.cta-text-box__link {
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
-.contact-text-box__link:link, .contact-text-box__link:visited {
+.cta-text-box__link:link, .cta-text-box__link:visited {
   text-decoration: none;
   padding: 1rem 2.4rem;
   border-radius: 11px;
@@ -127,8 +132,11 @@ body {
   font-size: 3rem;
   color: #fbfcf8;
 }
-.contact-text-box__link:hover, .contact-text-box__link:active {
+.cta-text-box__link:hover, .cta-text-box__link:active {
   background-color: #003049;
+}
+.cta-text-box__link__icon {
+  font-size: 3rem;
 }
 
 .wrapper {
@@ -137,9 +145,9 @@ body {
   width: 80rem;
   height: 40rem;
   border-radius: 11px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
   left: 50%;
-  top: 50%;
+  top: 60%;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
   display: flex;
 }
@@ -393,14 +401,14 @@ body {
 .section-hero {
   position: relative;
   height: 90vh;
-  background-image: linear-gradient(110deg, rgba(204, 228, 240, 0.8) 0%, rgba(204, 228, 240, 0.7) 50%, rgba(153, 201, 226, 0.4) 100%), url(../../img/hero.jpg);
+  background-image: linear-gradient(110deg, rgba(204, 228, 240, 0.8) 0%, rgba(204, 228, 240, 0.7) 50%, rgba(153, 201, 226, 0.4) 100%), url(../../img/hero.webp);
   background-size: cover;
   background-position: center;
 }
 
 .section-about {
   padding: 6rem;
-  background-image: linear-gradient(to bottom, #fbfcf8, rgba(251, 252, 248, 0.8)), url(../../img/bg.jpg);
+  background-image: linear-gradient(to bottom, #fbfcf8, rgba(251, 252, 248, 0.8)), url(../../img/bg.webp);
   background-size: cover;
   background-position: center;
 }
@@ -437,9 +445,9 @@ body {
   position: relative;
 }
 
-.section-contact {
+.section-cta {
   padding: 16rem;
-  background-image: linear-gradient(110deg, rgba(204, 228, 240, 0.8), rgba(204, 228, 240, 0.7)), url(../../img/3.jpg);
+  background-image: linear-gradient(110deg, rgba(204, 228, 240, 0.8), rgba(204, 228, 240, 0.7)), url(../../img/cta.webp);
   background-size: cover;
   background-position: center;
 }/*# sourceMappingURL=main.css.map */
