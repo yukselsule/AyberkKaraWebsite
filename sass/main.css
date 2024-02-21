@@ -146,9 +146,9 @@ body {
   width: 80rem;
   height: 40rem;
   border-radius: 11px;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -61%);
   left: 50%;
-  top: 65%;
+  top: 61%;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
   display: flex;
 }
@@ -206,7 +206,6 @@ body {
 .testimonial-container h6 {
   color: #bcc4da;
   font-size: 0.9em;
-  letter-spacing: 0.03em;
   font-weight: 400;
   text-align: center;
 }
@@ -265,12 +264,12 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: 2.4rem;
 }
 .communication__list-item {
   display: grid;
   grid-template-columns: 1fr 6fr;
-  gap: 1.2rem;
+  gap: 1rem;
   align-items: center;
 }
 .communication__list-icon {
@@ -489,8 +488,8 @@ body {
 }
 
 .section-testimonials {
-  padding: 6rem;
-  height: 60rem;
+  padding: 0 6rem 2rem 6rem;
+  height: 55rem;
   background-color: #fbfcf8;
   position: relative;
 }

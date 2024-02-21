@@ -20,12 +20,12 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 3.2rem;
+    gap: 2.4rem;
 
     &-item {
       display: grid;
       grid-template-columns: 1fr 6fr;
-      gap: 1.2rem;
+      gap: 1rem;
       align-items: center;
     }
 
