@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ayberk Kara Diş Hekimi Muayenehanesi, diş hekimi olarak hizmet veren Ayberk Kara için hazırlanmış bir sitedir."
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,12 +40,14 @@
 
       <nav class="header__main-nav">
         <ul class="header__main-nav-list">
-          <li><a class="header__main-nav-link" href="#">Hakkında</a></li>
-          <li><a class="header__main-nav-link" href="#">Tedaviler</a></li>
+          <li><a class="header__main-nav-link" href="#about">Hakkında</a></li>
           <li>
-            <a class="header__main-nav-link" href="#">Örnekler</a>
+            <a class="header__main-nav-link" href="#treatments">Tedaviler</a>
           </li>
-          <li><a class="header__main-nav-link" href="#">İletişim</a></li>
+          <li>
+            <a class="header__main-nav-link" href="#examples">Örnekler</a>
+          </li>
+          <li><a class="header__main-nav-link" href="#contact">İletişim</a></li>
           <li>
             <a
               target="_blank"
@@ -53,6 +59,7 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <div class="section-hero">
         <div class="hero__text-box">
@@ -70,8 +77,8 @@
         </div>
       </div>
 
-      <div class="section-about">
-        <h2 class="heading-secondary">Hakkında</h2>
+      <div class="section-about" id="about">
+        <h2 class="heading-secondary">HAKKINDA</h2>
         <div class="section-about__main">
           <div class="about__image-box">
             <img
@@ -86,10 +93,10 @@
               <h3 class="heading-tertiary">Eğitim</h3>
               <ul>
                 <li>
-                  Okan Üniversitesi Diş Hekimliği Fakültesi - Lisans (2014-2019)
+                  Okan Üniversitesi Ortodonti Anabilim Dalı - Doktora (2019-)
                 </li>
                 <li>
-                  Okan Üniversitesi Ortodonti Anabilim Dalı - Doktora (2019-)
+                  Okan Üniversitesi Diş Hekimliği Fakültesi - Lisans (2014-2019)
                 </li>
               </ul>
             </div>
@@ -131,12 +138,12 @@
         </div>
       </div>
 
-      <div class="section-treatments">
-        <h2 class="heading-secondary">Tedavİler</h2>
+      <div class="section-treatments" id="treatments">
+        <h2 class="heading-secondary">TEDAVİLER</h2>
         <div class="section-treatments__main">
           <div class="treatment__img-box">
             <div class="treatment__img-box__img">
-              <img src="img/treatments1.webp" alt="" />
+              <img src="img/treatments1.webp" alt="dişçi muayenesi" />
             </div>
             <div class="treatment__text-box">
               <h4 class="heading-quaternary">Dolgu Uygulamaları</h4>
@@ -144,7 +151,7 @@
           </div>
           <div class="treatment__img-box">
             <div class="treatment__img-box__img">
-              <img src="img/treatments2.webp" alt="" />
+              <img src="img/treatments2.webp" alt="dişçi muayenesi" />
             </div>
             <div class="treatment__text-box">
               <h4 class="heading-quaternary">Porselen Diş</h4>
@@ -152,7 +159,7 @@
           </div>
           <div class="treatment__img-box">
             <div class="treatment__img-box__img">
-              <img src="img/treatments3.webp" alt="" />
+              <img src="img/treatments3.webp" alt="dişçi muayenesi" />
             </div>
             <div class="treatment__text-box">
               <h4 class="heading-quaternary">Diş Teli Tedavisi</h4>
@@ -160,7 +167,7 @@
           </div>
           <div class="treatment__img-box">
             <div class="treatment__img-box__img">
-              <img src="img/treatments4.webp" alt="" />
+              <img src="img/treatments4.webp" alt="dişçi muayenesi" />
             </div>
             <div class="treatment__text-box">
               <h4 class="heading-quaternary">İmplant Uygulamaları</h4>
@@ -168,7 +175,7 @@
           </div>
           <div class="treatment__img-box">
             <div class="treatment__img-box__img">
-              <img src="img/treatments5.webp" alt="" />
+              <img src="img/treatments5.webp" alt="dişçi muayenesi" />
             </div>
             <div class="treatment__text-box">
               <h4 class="heading-quaternary">Kanal Tedavisi</h4>
@@ -176,7 +183,7 @@
           </div>
           <div class="treatment__img-box">
             <div class="treatment__img-box__img">
-              <img src="img/treatments6.webp" alt="" />
+              <img src="img/treatments6.webp" alt="dişçi muayenesi" />
             </div>
             <div class="treatment__text-box">
               <h4 class="heading-quaternary">Diş Kaplama</h4>
@@ -185,8 +192,8 @@
         </div>
       </div>
 
-      <div class="section-examples">
-        <h2 class="heading-secondary">Öncesİ - Sonrası</h2>
+      <div class="section-examples" id="examples">
+        <h2 class="heading-secondary">ÖNCESİ - SONRASI</h2>
         <div class="section-examples__main">
           <div class="example">
             <div class="example__image-container">
@@ -454,12 +461,13 @@
 
       <div class="section-cta">
         <div class="cta-text-box">
-          <p class="cta-text-box__text">
+          <p class="cta-text-box__text margin-bottom-sm">
             Sizlerle kolaylıkla irtibat kurabilmek, kafanızdaki soru
-            işaretlerini giderebilmek için buradayım. Amacımız, hastalarıma en
-            iyi ve en kaliteli hizmeti sunmak ve her türlü diş sağlığı
-            sorunlarına çözüm üretmektir. Randevu veya bilgi almak için mesaj
-            atınız.
+            işaretlerini giderebilmek için buradayım.
+            <!-- Amacım, hastalarıma en iyi
+            ve en kaliteli hizmeti sunmak ve her türlü diş sağlığı sorunlarına
+            çözüm üretmektir.  -->
+            Randevu veya bilgi almak için mesaj atınız.
           </p>
           <a
             target="_blank"
@@ -476,10 +484,11 @@
       </div>
 
       <div class="section-contact">
-        <h2 class="heading-secondary">İletişİm - Ulaşım</h2>
+        <h2 class="heading-secondary">İLETİŞİM - ULAŞIM</h2>
         <div class="section-contact__main">
           <div class="map">
             <iframe
+              title="map"
               class="map__main"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11993.663446443805!2d36.3496117!3d41.2780529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x408877a7c5e91919%3A0x481ac7245ef5a927!2sDi%C5%9F%20Hekimi%20Ayberk%20Kara!5e0!3m2!1str!2str!4v1708457772249!5m2!1str!2str"
               width="600"
@@ -592,7 +601,55 @@
     </main>
 
     <footer>
-      <div class="footer"></div>
+      <div class="footer">
+        <div class="footer-col">
+          <div class="footer-logo-box">
+            <a class="footer-logo-box__logo" href="#"
+              ><img src="img/navbar-logo.svg" alt="Ayberk Kara Diş Hekimi Logo"
+            /></a>
+          </div>
+          <div class="copyright-box">
+            <p class="copyright-box__text">
+              Ayberk Kara Muayenehanesi &copy;
+              <span class="year"> 2026</span> Tüm hakları saklıdır.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div><p class="heading-footer margin-bottom-sm">Menü</p></div>
+          <ul>
+            <li><a href="#about" class="footer-link">Hakkında</a></li>
+            <li><a href="#treatments" class="footer-link">Tedaviler</a></li>
+            <li><a href="#" class="footer-link">KVKK Aydınlatma Metni</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col open-hours">
+          <div class="open-hours__text">
+            <p class="heading-footer margin-bottom-sm">Çalışma Saatleri</p>
+          </div>
+          <div class="open-hours__list">
+            <ul>
+              <!-- <li class="open-hours__list-item">
+                <p>Bizi ziyaret edin.</p>
+              </li> -->
+              <li class="open-hours__list-item">
+                <label>Hafta içi</label>
+                <span>09 <sup>30</sup>- 18 <sup>00</sup></span>
+              </li>
+              <li class="open-hours__list-item">
+                <label>Cumartesi</label>
+                <span>11 <sup>00</sup>- 17 <sup>00</sup></span>
+              </li>
+              <li class="open-hours__list-item">
+                <label>Pazar</label>
+                <span>Kapalı</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script
