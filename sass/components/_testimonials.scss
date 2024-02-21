@@ -4,44 +4,47 @@
     rgba($color-primary-gradient-light, 0.4),
     rgba($color-primary-gradient-dark, 0.4)
   );
-  position: absolute;
-  width: 80rem;
-  height: 40rem;
-  border-radius: 11px;
-  transform: translate(-50%, -61%);
-  left: 50%;
-  top: 61%;
-  box-shadow: 0 1rem 3rem rgba($color-black, 0.15);
   display: flex;
+
+  width: 80rem;
+  height: 35rem;
+  border-radius: 11px;
+
+  @include centerContent;
+
+  box-shadow: 0 1rem 3rem rgba($color-black, 0.15);
 
   & button {
     font-size: 3rem;
     height: 4.4rem;
     width: 4.4rem;
-    background-color: #ffffff;
+    background-color: $color-white;
+    color: $color-primary-dark;
+    border: none;
+
     position: absolute;
     margin: auto;
     top: 0;
     bottom: 0;
-    border: none;
-    color: $color-primary-dark;
+
     box-shadow: 0 0 1rem rgba($color-black, 0.25);
     cursor: pointer;
     border-radius: 50%;
 
     &#next {
-      right: -1.1em;
+      right: -2.2rem;
     }
 
     &#prev {
-      left: -1.1em;
+      left: -2.2rem;
     }
   }
 }
 .testimonial-container {
+  position: relative;
+
   width: 85%;
   height: 100%;
-  position: relative;
   margin: auto;
   padding: 1rem 1rem;
 
@@ -53,28 +56,22 @@
   & p {
     color: $color-grey-dark;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.4;
+    margin-bottom: 2rem;
   }
 
   & img {
     display: block;
     margin: 1rem auto 1rem auto;
     border-radius: 50%;
-    width: 6rem;
+    width: 5rem;
   }
 
   & h3 {
-    color: #2d3d67;
-    font-size: 1.6rem;
-    text-align: center;
-  }
-
-  & h6 {
-    color: #bcc4da;
-    font-size: 0.9em;
-    font-weight: 400;
+    color: $color-primary-dark;
+    font-size: 1.4rem;
     text-align: center;
   }
 }

@@ -54,13 +54,13 @@
 
 .section-testimonials {
   padding: 0 6rem 2rem 6rem;
-  height: 55rem;
+  height: 50rem;
   background-color: $color-white;
   position: relative;
 }
 
 .section-cta {
-  padding: 16rem;
+  height: 70vh;
   background-image: linear-gradient(
       110deg,
       rgba($color-primary-gradient-light, 0.8),
@@ -69,6 +69,8 @@
     url(../../img/cta.webp);
   background-size: cover;
   background-position: center;
+
+  position: relative;
 }
 
 .section-contact {
@@ -81,4 +83,13 @@
     gap: 4rem;
     align-items: center;
   }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+  gap: 4rem;
+  background-color: $color-primary-dark;
+  color: $color-white;
+  align-items: center;
 }

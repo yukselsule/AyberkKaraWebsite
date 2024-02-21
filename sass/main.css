@@ -25,7 +25,7 @@ body {
 
 .heading-primary {
   color: #003049;
-  font-size: 4.4rem;
+  font-size: 3.6rem;
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: -1px;
@@ -34,7 +34,7 @@ body {
 .heading-secondary {
   color: #003049;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 1.8rem;
   letter-spacing: -0.5px;
   border-bottom: solid 2px #99c9e2;
   margin-bottom: 4rem;
@@ -42,27 +42,36 @@ body {
 
 .heading-tertiary {
   color: #003049;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
 .heading-quaternary {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-align: center;
+}
+
+.heading-footer {
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .margin-top-sm {
   margin-top: 2rem;
 }
 
+.margin-bottom-sm {
+  margin-bottom: 2rem;
+}
+
 .btn {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 13px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.6rem;
   transition: all 0.3s;
 }
 .btn:hover {
@@ -112,9 +121,15 @@ body {
   gap: 4rem;
   align-items: center;
   justify-content: center;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .cta-text-box__text {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
   color: #003049;
   text-align: center;
 }
@@ -124,13 +139,14 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 11px;
 }
 .cta-text-box__link:link, .cta-text-box__link:visited {
-  text-decoration: none;
-  padding: 1rem 2.4rem;
-  border-radius: 11px;
   background-color: #0077b6;
-  font-size: 3rem;
+  font-size: 1.8rem;
+  font-weight: 600;
   color: #fbfcf8;
 }
 .cta-text-box__link:hover, .cta-text-box__link:active {
@@ -142,36 +158,36 @@ body {
 
 .wrapper {
   background-image: linear-gradient(to bottom, rgba(204, 228, 240, 0.4), rgba(153, 201, 226, 0.4));
+  display: flex;
   position: absolute;
   width: 80rem;
-  height: 40rem;
+  height: 35rem;
   border-radius: 11px;
-  transform: translate(-50%, -61%);
   left: 50%;
-  top: 61%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
-  display: flex;
 }
 .wrapper button {
   font-size: 3rem;
   height: 4.4rem;
   width: 4.4rem;
-  background-color: #ffffff;
+  background-color: #fbfcf8;
+  color: #003049;
+  border: none;
   position: absolute;
   margin: auto;
   top: 0;
   bottom: 0;
-  border: none;
-  color: #003049;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
   cursor: pointer;
   border-radius: 50%;
 }
 .wrapper button#next {
-  right: -1.1em;
+  right: -2.2rem;
 }
 .wrapper button#prev {
-  left: -1.1em;
+  left: -2.2rem;
 }
 
 .testimonial-container {
@@ -188,30 +204,25 @@ body {
 .testimonial-container p {
   color: #2f2f2f;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.4;
+  margin-bottom: 2rem;
 }
 .testimonial-container img {
   display: block;
   margin: 1rem auto 1rem auto;
   border-radius: 50%;
-  width: 6rem;
+  width: 5rem;
 }
 .testimonial-container h3 {
-  color: #2d3d67;
-  font-size: 1.6rem;
-  text-align: center;
-}
-.testimonial-container h6 {
-  color: #bcc4da;
-  font-size: 0.9em;
-  font-weight: 400;
+  color: #003049;
+  font-size: 1.4rem;
   text-align: center;
 }
 
 .about__image-box {
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
 .about__image-box__img {
   display: inline-block;
@@ -228,7 +239,8 @@ body {
 .about__text-box__segment {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  padding: 3rem;
+  gap: 2rem;
+  padding: 2rem;
   background-color: rgba(144, 224, 239, 0.2);
   border-radius: 9px;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
@@ -237,9 +249,10 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1rem;
   font-size: 1.6rem;
   font-weight: 500;
+  line-height: 1.5;
 }
 
 .contact-box {
@@ -259,6 +272,7 @@ body {
 .communication {
   padding: 4rem;
   align-items: center;
+  font-size: 1.4rem;
 }
 .communication__list {
   list-style: none;
@@ -363,6 +377,57 @@ body {
   box-shadow: o 1rem 3rem rgba(0, 0, 0, 0.3);
 }
 
+.footer-col {
+  padding: 4rem 12rem;
+  text-align: center;
+}
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer-logo-box {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.footer-logo-box__logo {
+  width: 100%;
+}
+
+.copyright-box {
+  margin-top: 2rem;
+}
+
+.footer-link {
+  font-size: 1.8rem;
+}
+.footer-link:link, .footer-link:visited {
+  color: #fbfcf8;
+  text-decoration: none;
+}
+
+.open-hours__list-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+.open-hours__list-item:first-child {
+  border-bottom: none;
+}
+.open-hours__list-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.open-hours__list-item span {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
 .header {
   height: 10vh;
   background-color: #0077b6;
@@ -389,7 +454,7 @@ body {
   gap: 5rem;
   margin: 0 6rem 0 0;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 .header__main-nav-link:link, .header__main-nav-link:visited {
@@ -400,16 +465,17 @@ body {
 
 .hero__text-box {
   position: absolute;
-  bottom: 20rem;
-  left: 4rem;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
   width: 40%;
   padding: 4rem;
   border-radius: 11px;
   background-color: rgba(153, 201, 226, 0.8);
 }
 .hero__text-box__text {
-  margin: 2rem 0;
-  font-size: 2rem;
+  margin: 1.6rem 0;
+  font-size: 1.6rem;
   font-weight: 500;
   color: #000;
 }
@@ -489,16 +555,17 @@ body {
 
 .section-testimonials {
   padding: 0 6rem 2rem 6rem;
-  height: 55rem;
+  height: 50rem;
   background-color: #fbfcf8;
   position: relative;
 }
 
 .section-cta {
-  padding: 16rem;
+  height: 70vh;
   background-image: linear-gradient(110deg, rgba(204, 228, 240, 0.8), rgba(204, 228, 240, 0.7)), url(../../img/cta.webp);
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .section-contact {
@@ -509,5 +576,14 @@ body {
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 4rem;
+  align-items: center;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+  gap: 4rem;
+  background-color: #003049;
+  color: #fbfcf8;
   align-items: center;
 }/*# sourceMappingURL=main.css.map */
