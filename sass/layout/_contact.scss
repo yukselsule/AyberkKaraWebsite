@@ -1,0 +1,54 @@
+.contact-box {
+  background-color: $color-primary-gradient-light;
+  padding: 2rem;
+  border-radius: 13px;
+}
+
+.map {
+  text-align: center;
+  &__main {
+    display: inline-block;
+    border-radius: 13px;
+  }
+}
+
+.communication {
+  padding: 4rem;
+  align-items: center;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    &-item {
+      display: grid;
+      grid-template-columns: 1fr 6fr;
+      gap: 1.2rem;
+      align-items: center;
+    }
+
+    &-icon {
+      width: 2.8rem;
+      height: 2.8rem;
+      color: $color-primary;
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-primary-dark;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color-primary;
+      text-decoration: underline;
+    }
+  }
+}

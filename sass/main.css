@@ -47,8 +47,9 @@ body {
 }
 
 .heading-quaternary {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .margin-top-sm {
@@ -84,8 +85,7 @@ body {
   background-color: #f8f6f0;
 }
 
-.btn--text:link,
-.btn--text:visited {
+.btn--text:link, .btn--text:visited {
   font-size: 1.6rem;
   font-weight: 600;
   color: #0077b6;
@@ -125,8 +125,7 @@ body {
   justify-content: center;
   gap: 1rem;
 }
-.cta-text-box__link:link,
-.cta-text-box__link:visited {
+.cta-text-box__link:link, .cta-text-box__link:visited {
   text-decoration: none;
   padding: 1rem 2.4rem;
   border-radius: 11px;
@@ -134,8 +133,7 @@ body {
   font-size: 3rem;
   color: #fbfcf8;
 }
-.cta-text-box__link:hover,
-.cta-text-box__link:active {
+.cta-text-box__link:hover, .cta-text-box__link:active {
   background-color: #003049;
 }
 .cta-text-box__link__icon {
@@ -143,18 +141,14 @@ body {
 }
 
 .wrapper {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(204, 228, 240, 0.4),
-    rgba(153, 201, 226, 0.4)
-  );
+  background-image: linear-gradient(to bottom, rgba(204, 228, 240, 0.4), rgba(153, 201, 226, 0.4));
   position: absolute;
   width: 80rem;
   height: 40rem;
   border-radius: 11px;
   transform: translate(-50%, -60%);
   left: 50%;
-  top: 60%;
+  top: 65%;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
   display: flex;
 }
@@ -249,6 +243,55 @@ body {
   font-weight: 500;
 }
 
+.contact-box {
+  background-color: #cce4f0;
+  padding: 2rem;
+  border-radius: 13px;
+}
+
+.map {
+  text-align: center;
+}
+.map__main {
+  display: inline-block;
+  border-radius: 13px;
+}
+
+.communication {
+  padding: 4rem;
+  align-items: center;
+}
+.communication__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.communication__list-item {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  gap: 1.2rem;
+  align-items: center;
+}
+.communication__list-icon {
+  width: 2.8rem;
+  height: 2.8rem;
+  color: #0077b6;
+}
+.communication__list-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.communication__link {
+  text-decoration: none;
+  color: #003049;
+  transition: all 0.3s;
+}
+.communication__link:hover {
+  color: #0077b6;
+  text-decoration: underline;
+}
+
 .example {
   display: grid;
   place-content: center;
@@ -271,9 +314,9 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: left;
-  object-position: left;
+     object-position: left;
 }
 
 .image-before {
@@ -350,8 +393,7 @@ body {
   font-size: 2rem;
   font-weight: 600;
 }
-.header__main-nav-link:link,
-.header__main-nav-link:visited {
+.header__main-nav-link:link, .header__main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
   color: #fbfcf8;
@@ -385,7 +427,7 @@ body {
   aspect-ratio: 8/5;
   border-radius: 13px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
 }
@@ -409,25 +451,14 @@ body {
 .section-hero {
   position: relative;
   height: 90vh;
-  background-image: linear-gradient(
-      110deg,
-      rgba(204, 228, 240, 0.8) 0%,
-      rgba(204, 228, 240, 0.7) 50%,
-      rgba(153, 201, 226, 0.4) 100%
-    ),
-    url(../img/hero.webp);
+  background-image: linear-gradient(110deg, rgba(204, 228, 240, 0.8) 0%, rgba(204, 228, 240, 0.7) 50%, rgba(153, 201, 226, 0.4) 100%), url(../../img/hero.webp);
   background-size: cover;
   background-position: center;
 }
 
 .section-about {
   padding: 6rem;
-  background-image: linear-gradient(
-      to bottom,
-      #fbfcf8,
-      rgba(251, 252, 248, 0.8)
-    ),
-    url(../img/bg.webp);
+  background-image: linear-gradient(to bottom, #fbfcf8, rgba(251, 252, 248, 0.8)), url(../../img/bg.webp);
   background-size: cover;
   background-position: center;
 }
@@ -459,19 +490,25 @@ body {
 
 .section-testimonials {
   padding: 6rem;
-  height: 80rem;
+  height: 60rem;
   background-color: #fbfcf8;
   position: relative;
 }
 
 .section-cta {
   padding: 16rem;
-  background-image: linear-gradient(
-      110deg,
-      rgba(204, 228, 240, 0.8),
-      rgba(204, 228, 240, 0.7)
-    ),
-    url(../img/cta.webp);
+  background-image: linear-gradient(110deg, rgba(204, 228, 240, 0.8), rgba(204, 228, 240, 0.7)), url(../../img/cta.webp);
   background-size: cover;
   background-position: center;
-} /*# sourceMappingURL=main.css.map */
+}
+
+.section-contact {
+  padding: 6rem;
+}
+.section-contact__main {
+  padding: 0 6rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 4rem;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */

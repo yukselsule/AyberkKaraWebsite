@@ -1,0 +1,26 @@
+<div class="contact-box open-hours">
+  <div class="open-hours__text">
+    <h4 class="heading-quaternary">Saatler</h4>
+  </div>
+  <div class="open-hours__list">
+    <ul>
+      <li class="open-hours__list-item">
+        <p>Bu saatler aralığında muayenehanemizi ziyaret edebilirsiniz.</p>
+      </li>
+      <li class="open-hours__list-item">
+        <label>Pazartesi - Cuma</label>
+        <span>09 <sup>30</sup>- 18 <sup>00</sup></span>
+      </li>
+      <li class="open-hours__list-item">
+        <label>Cumartesi</label>
+        <span>11 <sup>00</sup>- 17 <sup>00</sup></span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+.open-hours { &__list-item { display: flex; flex-direction: column; gap: 1.2rem;
+font-size: 1.8rem; padding-bottom: 1.2rem; text-align: center; margin-bottom:
+2.4rem; border-bottom: dotted 2px $color-primary-light; &:first-child {
+border-bottom: none; } &:last-child { border-bottom: none; margin-bottom: 0; } &
+span { font-size: 2.4rem; font-weight: 500; color: $color-primary; } } }

@@ -54,7 +54,7 @@
 
 .section-testimonials {
   padding: 6rem;
-  height: 80rem;
+  height: 60rem;
   background-color: $color-white;
   position: relative;
 }
@@ -69,4 +69,16 @@
     url(../../img/cta.webp);
   background-size: cover;
   background-position: center;
+}
+
+.section-contact {
+  padding: 6rem;
+
+  &__main {
+    padding: 0 6rem;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 4rem;
+    align-items: center;
+  }
 }
