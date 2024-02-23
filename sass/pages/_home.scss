@@ -7,7 +7,7 @@
       rgba($color-primary-gradient-light, 0.7) 50%,
       rgba($color-primary-gradient-dark, 0.4) 100%
     ),
-    url(../../img/hero.webp);
+    url(../img/hero.webp);
   background-size: cover;
   background-position: center;
 }
@@ -19,13 +19,14 @@
       rgba($color-white, 1),
       rgba($color-white, 0.8)
     ),
-    url(../../img/bg.webp);
+    url(../img/bg.webp);
   background-size: cover;
   background-position: center;
 
   &__main {
     display: grid;
     grid-template-columns: 2fr 5fr;
+    gap: 2rem;
   }
 }
 
@@ -66,7 +67,7 @@
       rgba($color-primary-gradient-light, 0.8),
       rgba($color-primary-gradient-light, 0.7)
     ),
-    url(../../img/cta.webp);
+    url(../img/cta.webp);
   background-size: cover;
   background-position: center;
 
@@ -77,19 +78,24 @@
   padding: 6rem;
 
   &__main {
-    padding: 0 6rem;
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 3fr 2fr;
     gap: 4rem;
     align-items: center;
   }
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: 3fr 2fr 2fr;
-  gap: 4rem;
+  padding: 4rem 8rem 2rem 8rem;
   background-color: $color-primary-dark;
   color: $color-white;
-  align-items: center;
+  font-size: 1.6rem;
+
+  &__main {
+    padding: 2rem 6rem 6rem 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    align-items: self-start;
+  }
 }

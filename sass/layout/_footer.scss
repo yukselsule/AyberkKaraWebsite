@@ -1,12 +1,13 @@
 .footer-col {
-  padding: 4rem 12rem;
-  text-align: center;
+  &:first-child {
+    text-align: center;
+  }
 
   & ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 2rem;
   }
 }
 
@@ -21,37 +22,48 @@
   }
 }
 
-.copyright-box {
-  margin-top: 2rem;
-}
-
 .footer-link {
-  font-size: 1.8rem;
+  transition: all 0.3s;
+  text-transform: uppercase;
+
   &:link,
   &:visited {
     color: $color-white;
     text-decoration: none;
   }
+
+  &:hover,
+  &:active {
+    color: $color-secondary;
+  }
 }
 
-.open-hours {
-  &__list-item {
-    display: flex;
+.footer__contact-list {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  &__icon {
+    display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+    color: $color-primary-light;
+  }
 
-    justify-content: space-between;
-
-    font-size: 1.8rem;
-    // margin-bottom: 2.4rem;
-    &:first-child {
-      border-bottom: none;
+  &__item {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: inherit;
     }
-    &:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-    }
-    & span {
-      font-size: 2rem;
-      font-weight: 500;
+    &:hover,
+    &:active {
+      color: $color-secondary;
     }
   }
+}
+
+.copyright-box {
+  text-align: center;
+  font-size: 1.4rem;
+  border-top: solid 1px $color-primary-light;
 }
