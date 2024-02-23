@@ -10,15 +10,6 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
@@ -483,118 +474,143 @@
         </div>
       </div>
 
-      <div class="section-contact">
+      <div class="section-contact" id="contact">
         <h2 class="heading-secondary">İLETİŞİM - ULAŞIM</h2>
         <div class="section-contact__main">
+          <div class="contact-information">
+            <div class="contact-information-box communication">
+              <div class="contact-information-box-text">
+                <h4 class="heading-quaternary">Bize ulaşın</h4>
+              </div>
+              <div>
+                <ul class="communication__list">
+                  <li class="communication__list-item margin-top-sm">
+                    <ion-icon
+                      class="communication__list-icon"
+                      name="location-outline"
+                    ></ion-icon>
+                    <p class="communication__list-text">
+                      Kılıçdede, Ülkem Sk. 8B D:32, 55060 İlkadım/Samsun
+                    </p>
+                  </li>
+                  <li class="communication__list-item">
+                    <a
+                      class="communication__link"
+                      aria-label="phone-number"
+                      href="tel:90537-491-05-50"
+                    >
+                      <ion-icon
+                        class="communication__list-icon"
+                        name="call-outline"
+                      ></ion-icon
+                    ></a>
+                    <a
+                      class="communication__link"
+                      aria-label="phone-number"
+                      href="tel:90537-491-05-50"
+                    >
+                      <p class="communication__list-text">0537 491 05 50</p></a
+                    >
+                  </li>
+                  <li class="communication__list-item">
+                    <a
+                      class="communication__link"
+                      aria-label="mail-address"
+                      href="mailto:ayberk@ayberkara.com"
+                    >
+                      <ion-icon
+                        class="communication__list-icon"
+                        name="mail-outline"
+                      ></ion-icon
+                    ></a>
+                    <a
+                      class="communication__link"
+                      aria-label="mail-address"
+                      href="mailto:ayberk@ayberkara.com"
+                    >
+                      <p class="communication__list-text">
+                        ayberk@ayberkara.com
+                      </p></a
+                    >
+                  </li>
+                  <li class="communication__list-item">
+                    <a
+                      target="_blank"
+                      class="communication__link"
+                      aria-label="logo-instagram"
+                      href="http://instagram.com/_u/dt.ayberkara/"
+                    >
+                      <ion-icon
+                        class="communication__list-icon"
+                        name="logo-instagram"
+                      ></ion-icon>
+                    </a>
+                    <a
+                      target="_blank"
+                      class="communication__link"
+                      aria-label="instagram-account"
+                      href="http://instagram.com/_u/dt.ayberkara/"
+                      ><p class="communication__list-text">dt.ayberkara</p></a
+                    >
+                  </li>
+                  <li class="communication__list-item">
+                    <a
+                      target="_blank"
+                      class="communication__link"
+                      aria-label="logo-linkedin"
+                      href="https://www.linkedin.com/in/ayberk-kara-a7862550/?locale=tr_TR"
+                      ><ion-icon
+                        class="communication__list-icon"
+                        name="logo-linkedin"
+                      ></ion-icon>
+                    </a>
+                    <a
+                      target="_blank"
+                      class="communication__link"
+                      aria-label="linkedin-account"
+                      href="https://www.linkedin.com/in/ayberk-kara-a7862550/?locale=tr_TR"
+                      ><p class="communication__list-text">Ayberk Kara</p></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contact-information-box open-hours">
+              <div class="contact-information-box-text">
+                <h4 class="heading-quaternary">Çalışma Saatleri</h4>
+              </div>
+              <div class="open-hours__list">
+                <ul>
+                  <li class="open-hours__list-item">
+                    <p>Bizi ziyaret edin.</p>
+                  </li>
+                  <li class="open-hours__list-item">
+                    <label>Hafta içi</label>
+                    <span>09 <sup>30</sup>- 18 <sup>00</sup></span>
+                  </li>
+                  <li class="open-hours__list-item">
+                    <label>Cumartesi</label>
+                    <span>11 <sup>00</sup>- 17 <sup>00</sup></span>
+                  </li>
+                  <li class="open-hours__list-item">
+                    <label>Pazar</label>
+                    <span>Kapalı</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           <div class="map">
             <iframe
               title="map"
               class="map__main"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11993.663446443805!2d36.3496117!3d41.2780529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x408877a7c5e91919%3A0x481ac7245ef5a927!2sDi%C5%9F%20Hekimi%20Ayberk%20Kara!5e0!3m2!1str!2str!4v1708457772249!5m2!1str!2str"
-              width="600"
-              height="450"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-          </div>
-
-          <div class="contact-box communication">
-            <div class="contact-box-text">
-              <h4 class="heading-quaternary">Bize ulaşın</h4>
-            </div>
-            <div>
-              <ul class="communication__list">
-                <li class="communication__list-item margin-top-sm">
-                  <ion-icon
-                    class="communication__list-icon"
-                    name="location-outline"
-                  ></ion-icon>
-                  <p class="communication__list-text">
-                    Kılıçdede, Ülkem Sk. 8B D:32, 55060 İlkadım/Samsun
-                  </p>
-                </li>
-                <li class="communication__list-item">
-                  <a
-                    class="communication__link"
-                    aria-label="phone-number"
-                    href="tel:90537-491-05-50"
-                  >
-                    <ion-icon
-                      class="communication__list-icon"
-                      name="call-outline"
-                    ></ion-icon
-                  ></a>
-                  <a
-                    class="communication__link"
-                    aria-label="phone-number"
-                    href="tel:90537-491-05-50"
-                  >
-                    <p class="communication__list-text">0537 491 05 50</p></a
-                  >
-                </li>
-                <li class="communication__list-item">
-                  <a
-                    class="communication__link"
-                    aria-label="mail-address"
-                    href="mailto:ayberk@ayberkara.com"
-                  >
-                    <ion-icon
-                      class="communication__list-icon"
-                      name="mail-outline"
-                    ></ion-icon
-                  ></a>
-                  <a
-                    class="communication__link"
-                    aria-label="mail-address"
-                    href="mailto:ayberk@ayberkara.com"
-                  >
-                    <p class="communication__list-text">
-                      ayberk@ayberkara.com
-                    </p></a
-                  >
-                </li>
-                <li class="communication__list-item">
-                  <a
-                    target="_blank"
-                    class="communication__link"
-                    aria-label="logo-instagram"
-                    href="http://instagram.com/_u/dt.ayberkara/"
-                    ><ion-icon
-                      class="communication__list-icon"
-                      name="logo-instagram"
-                    ></ion-icon>
-                  </a>
-                  <a
-                    target="_blank"
-                    class="communication__link"
-                    aria-label="instagram-account"
-                    href="http://instagram.com/_u/dt.ayberkara/"
-                    ><p class="communication__list-text">dt.ayberkara</p></a
-                  >
-                </li>
-                <li class="communication__list-item">
-                  <a
-                    target="_blank"
-                    class="communication__link"
-                    aria-label="logo-linkedin"
-                    href="https://www.linkedin.com/in/ayberk-kara-a7862550/?locale=tr_TR"
-                    ><ion-icon
-                      class="communication__list-icon"
-                      name="logo-linkedin"
-                    ></ion-icon>
-                  </a>
-                  <a
-                    target="_blank"
-                    class="communication__link"
-                    aria-label="linkedin-account"
-                    href="https://www.linkedin.com/in/ayberk-kara-a7862550/?locale=tr_TR"
-                    ><p class="communication__list-text">Ayberk Kara</p></a
-                  >
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -602,52 +618,81 @@
 
     <footer>
       <div class="footer">
-        <div class="footer-col">
-          <div class="footer-logo-box">
-            <a class="footer-logo-box__logo" href="#"
-              ><img src="img/navbar-logo.svg" alt="Ayberk Kara Diş Hekimi Logo"
-            /></a>
+        <div class="footer__main">
+          <div class="footer-col margin-right-md">
+            <div class="footer-logo-box">
+              <a class="footer-logo-box__logo" href="#"
+                ><img
+                  src="img/navbar-logo.svg"
+                  alt="Ayberk Kara Diş Hekimi Logo"
+              /></a>
+            </div>
           </div>
-          <div class="copyright-box">
-            <p class="copyright-box__text">
-              Ayberk Kara Muayenehanesi &copy;
-              <span class="year"> 2026</span> Tüm hakları saklıdır.
-            </p>
-          </div>
-        </div>
 
-        <div class="footer-col">
-          <div><p class="heading-footer margin-bottom-sm">Menü</p></div>
-          <ul>
-            <li><a href="#about" class="footer-link">Hakkında</a></li>
-            <li><a href="#treatments" class="footer-link">Tedaviler</a></li>
-            <li><a href="#" class="footer-link">KVKK Aydınlatma Metni</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col open-hours">
-          <div class="open-hours__text">
-            <p class="heading-footer margin-bottom-sm">Çalışma Saatleri</p>
-          </div>
-          <div class="open-hours__list">
+          <div class="footer-col">
+            <div><p class="heading-footer margin-bottom-sm">Menü</p></div>
             <ul>
-              <!-- <li class="open-hours__list-item">
-                <p>Bizi ziyaret edin.</p>
-              </li> -->
-              <li class="open-hours__list-item">
-                <label>Hafta içi</label>
-                <span>09 <sup>30</sup>- 18 <sup>00</sup></span>
+              <li><a href="#about" class="footer-link">Hakkında</a></li>
+              <li><a href="#treatments" class="footer-link">Tedaviler</a></li>
+              <li><a href="#examples" class="footer-link">Örnekler</a></li>
+              <li><a href="#" class="footer-link">KVKK Aydınlatma Metni</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <div>
+              <p class="heading-footer margin-bottom-sm">Bize Ulaşın</p>
+            </div>
+            <ul>
+              <li class="footer__contact-list">
+                <a
+                  href="https://www.google.com/maps?ll=41.278053,36.349612&z=14&t=m&hl=tr&gl=TR&mapclient=embed&cid=5195684079151196455"
+                  ><ion-icon
+                    class="footer__contact-list__icon"
+                    name="location-outline"
+                  ></ion-icon
+                ></a>
+                <a
+                  href="https://www.google.com/maps?ll=41.278053,36.349612&z=14&t=m&hl=tr&gl=TR&mapclient=embed&cid=5195684079151196455"
+                  class="footer__contact-list__item"
+                >
+                  Kılıçdede, Ülkem Sk. 8B D:32, 55060 İlkadım/Samsun</a
+                >
               </li>
-              <li class="open-hours__list-item">
-                <label>Cumartesi</label>
-                <span>11 <sup>00</sup>- 17 <sup>00</sup></span>
+              <li class="footer__contact-list">
+                <a href="tel:90537-491-05-50" aria-label="phone-number">
+                  <ion-icon
+                    class="footer__contact-list__icon"
+                    name="call-outline"
+                  ></ion-icon
+                ></a>
+                <a href="tel:90537-491-05-50" class="footer__contact-list__item"
+                  >0537 491 05 50</a
+                >
               </li>
-              <li class="open-hours__list-item">
-                <label>Pazar</label>
-                <span>Kapalı</span>
+              <li class="footer__contact-list">
+                <a href="https://api.whatsapp.com/send?phone=905374910550"
+                  ><ion-icon
+                    class="footer__contact-list__icon"
+                    name="logo-whatsapp"
+                  ></ion-icon></a
+                ><a
+                  target="_blank"
+                  href="https://api.whatsapp.com/send?phone=905374910550"
+                  class="footer__contact-list__item"
+                >
+                  Diş Hekimi Ayberk Kara
+                </a>
               </li>
             </ul>
           </div>
+        </div>
+
+        <div class="copyright-box">
+          <p class="copyright-box__text margin-top-sm">
+            Ayberk Kara Muayenehanesi &copy;
+            <span class="year"> 2026</span> Tüm hakları saklıdır.
+          </p>
         </div>
       </div>
     </footer>
