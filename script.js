@@ -2,29 +2,19 @@
 
 //  Smooth scrolling
 
-const allLinks = document.querySelectorAll("a:link");
-
-allLinks.forEach(function (link) {
+document.querySelectorAll("a:link").forEach((link) => {
   link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const href = link.getAttribute("href");
+    const href = this.getAttribute("href");
 
-    // Scroll back to top
-    if (href === "#")
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-
-    // Scroll to other links
-    if (href !== "#" && href.startsWith("#")) {
+    if (href.startsWith("#")) {
+      e.preventDefault();
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
+    } else if (href.startsWith("tel:")) {
+    } else if (href.startsWith("mailto")) {
+    } else {
+      e.preventDefault();
     }
-
-    // Close mobile naviagtion
-    if (link.classList.contains("main-nav-link"))
-      headerEl.classList.toggle("nav-open");
   });
 });
 
