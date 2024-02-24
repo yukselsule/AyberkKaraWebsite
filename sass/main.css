@@ -22,6 +22,21 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 69em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 64em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 52em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   box-sizing: border-box;
@@ -43,6 +58,11 @@ body {
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: -1px;
+}
+@media (max-width: 69em) {
+  .heading-primary {
+    font-size: 3.2rem;
+  }
 }
 
 .heading-secondary {
@@ -155,6 +175,11 @@ body {
   color: #003049;
   text-align: center;
 }
+@media (max-width: 64em) {
+  .cta-text-box__text {
+    font-size: 2rem;
+  }
+}
 .cta-text-box__link {
   transition: all 0.3s;
   display: flex;
@@ -234,6 +259,11 @@ body {
   line-height: 1.4;
   margin-bottom: 2rem;
 }
+@media (max-width: 64em) {
+  .testimonial-container p {
+    font-size: 1.6rem;
+  }
+}
 .testimonial-container img {
   display: block;
   margin: 1rem auto 1rem auto;
@@ -296,6 +326,21 @@ body {
   background-color: #99c9e2;
   height: 100%;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 77em) {
+  .contact-information {
+    padding: 0 12rem;
+  }
+}
+@media (max-width: 64em) {
+  .contact-information {
+    padding: 0 8rem;
+  }
+}
+@media (max-width: 59em) {
+  .contact-information {
+    padding: 0 4rem;
+  }
 }
 
 .communication {
@@ -561,14 +606,14 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  height: 70px;
+  height: 10vh;
   width: 100%;
   z-index: 1000;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .sticky .section-hero {
-  margin-top: 70px;
+  margin-top: 10vh;
 }
 
 .treatment__img-box {
@@ -634,6 +679,11 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
 }
+@media (max-width: 69em) {
+  .section-treatments {
+    padding: 6rem 3rem;
+  }
+}
 
 .section-examples {
   padding: 6rem;
@@ -682,4 +732,19 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 4rem;
   align-items: self-start;
+}
+@media (max-width: 59em) {
+  .footer__main {
+    padding: 2rem 4rem 4rem 4rem;
+  }
+}
+@media (max-width: 64em) {
+  .footer {
+    padding: 3rem 6rem 1rem 6rem;
+  }
+}
+@media (max-width: 59em) {
+  .footer {
+    padding: 2rem 4rem 1rem 4rem;
+  }
 }/*# sourceMappingURL=main.css.map */
