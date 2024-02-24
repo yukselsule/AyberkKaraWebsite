@@ -8,6 +8,17 @@
 
 html {
   font-size: 62.5%;
+
+  @include respond(69em) {
+    font-size: 56.25%;
+  }
+
+  @include respond(64em) {
+    font-size: 55%;
+  }
+  @include respond(52em) {
+    font-size: 50%;
+  }
 }
 
 body {

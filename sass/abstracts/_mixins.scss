@@ -4,3 +4,37 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == 77em {
+    @media (max-width: 77em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 69em {
+    @media (max-width: 69em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 64em {
+    @media (max-width: 64em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 59em {
+    @media (max-width: 59em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 52em {
+    @media (max-width: 52em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 48em {
+    @media (max-width: 48em) {
+      @content;
+    }
+  }
+}

@@ -12,6 +12,10 @@ body {
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: -1px;
+
+  @include respond(69em) {
+    font-size: 3.2rem;
+  }
 }
 
 .heading-secondary {

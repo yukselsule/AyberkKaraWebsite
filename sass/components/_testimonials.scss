@@ -60,6 +60,10 @@
     font-weight: 500;
     line-height: 1.4;
     margin-bottom: 2rem;
+
+    @include respond(64em) {
+      font-size: 1.6rem;
+    }
   }
 
   & img {

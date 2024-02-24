@@ -13,6 +13,10 @@
     font-weight: 500;
     color: $color-primary-dark;
     text-align: center;
+
+    @include respond(64em) {
+      font-size: 2rem;
+    }
   }
 
   &__link {

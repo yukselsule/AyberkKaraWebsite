@@ -40,6 +40,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
   }
+
+  @include respond(69em) {
+    padding: 6rem 3rem;
+  }
 }
 
 .section-examples {
@@ -97,5 +101,16 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 4rem;
     align-items: self-start;
+
+    @include respond(59em) {
+      padding: 2rem 4rem 4rem 4rem;
+    }
+  }
+
+  @include respond(64em) {
+    padding: 3rem 6rem 1rem 6rem;
+  }
+  @include respond(59em) {
+    padding: 2rem 4rem 1rem 4rem;
   }
 }

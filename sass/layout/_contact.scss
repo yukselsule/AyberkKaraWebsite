@@ -18,6 +18,16 @@
     height: 100%;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.2);
   }
+
+  @include respond(77em) {
+    padding: 0 12rem;
+  }
+  @include respond(64em) {
+    padding: 0 8rem;
+  }
+  @include respond(59em) {
+    padding: 0 4rem;
+  }
 }
 
 .communication {
