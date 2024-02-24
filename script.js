@@ -14,7 +14,7 @@ const obs = new IntersectionObserver(
       document.body.classList.remove("sticky");
     }
   },
-  { root: null, threshold: 0, rootMargin: "-70px" }
+  { root: null, threshold: 0, rootMargin: "-67px" }
 );
 
 obs.observe(sectionHeroEl);
