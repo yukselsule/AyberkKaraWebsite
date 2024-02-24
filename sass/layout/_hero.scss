@@ -1,5 +1,9 @@
 .hero {
+  transition: all 0.3s;
   &__text-box {
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
     position: absolute;
     top: 50%;
     left: 25%;

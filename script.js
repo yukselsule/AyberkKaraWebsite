@@ -1,5 +1,24 @@
 "use strict";
 
+// Sticky navigation
+
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  { root: null, threshold: 0, rootMargin: "-70px" }
+);
+
+obs.observe(sectionHeroEl);
+
 //  Smooth scrolling
 
 document.querySelectorAll("a:link").forEach((link) => {
@@ -12,6 +31,7 @@ document.querySelectorAll("a:link").forEach((link) => {
       sectionEl.scrollIntoView({ behavior: "smooth" });
     } else if (href.startsWith("tel:")) {
     } else if (href.startsWith("mailto")) {
+    } else if (href.startsWith("http")) {
     } else {
       e.preventDefault();
     }

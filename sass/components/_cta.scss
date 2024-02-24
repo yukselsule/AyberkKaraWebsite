@@ -26,6 +26,8 @@
     padding: 1rem 2rem;
     border-radius: 11px;
 
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.2);
+
     &:link,
     &:visited {
       background-color: $color-primary;
@@ -35,6 +37,8 @@
     }
     &:hover,
     &:active {
+      transform: translateY(-0.5rem);
+      box-shadow: 0 1rem 3rem rgba($color-black, 0.4);
       background-color: $color-primary-dark;
     }
 

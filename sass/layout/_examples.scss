@@ -5,6 +5,7 @@
   overflow: hidden;
   border-radius: 11px;
   --position: 50%;
+  box-shadow: 0 1rem 3rem rgba($color-black, 0.2);
 
   &__image-container {
     max-width: 800px;
@@ -40,7 +41,7 @@
   height: 100%;
 
   &:focus-visible ~ .slider-button {
-    outline: 5px solid black;
+    outline: 5px solid $color-black;
     outline-offset: 3px;
   }
 
@@ -49,7 +50,7 @@
     inset: 0;
     width: 0.2rem;
     height: 100%;
-    background-color: #fff;
+    background-color: $color-white;
     z-index: 10;
     left: var(--position);
     transform: translateX(-50%);
@@ -58,8 +59,8 @@
 
   &-button {
     position: absolute;
-    background-color: #fff;
-    color: black;
+    background-color: $color-white;
+    color: $color-black;
     padding: 0.5rem;
     border-radius: 100vw;
     display: grid;
@@ -69,6 +70,6 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
     z-index: 100;
-    box-shadow: o 1rem 3rem rgba(#000, 0.3);
+    box-shadow: o 1rem 3rem rgba($color-black, 0.3);
   }
 }
