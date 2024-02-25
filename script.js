@@ -19,6 +19,22 @@ const obs = new IntersectionObserver(
 
 obs.observe(sectionHeroEl);
 
+// Mobile nav
+
+const menuBtn = document.querySelector(".menu");
+const closeBtn = document.querySelector(".close");
+const sidebar = document.querySelector(".sidebar");
+
+const showSidebar = function () {
+  sidebar.style.display = "flex";
+};
+const closeSidebar = function () {
+  sidebar.style.display = "none";
+};
+
+menuBtn.addEventListener("click", showSidebar);
+closeBtn.addEventListener("click", closeSidebar);
+
 //  Smooth scrolling
 
 document.querySelectorAll("a:link").forEach((link) => {
