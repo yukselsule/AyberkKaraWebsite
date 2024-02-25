@@ -549,6 +549,7 @@ body {
   background-color: #0077b6;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  position: relative;
 }
 .header__logo-box {
   height: 10vh;
@@ -578,6 +579,87 @@ body {
   text-decoration: none;
   color: #fbfcf8;
 }
+@media (max-width: 52em) {
+  .header__main-nav-link:link, .header__main-nav-link:visited {
+    display: none;
+  }
+}
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.sticky .section-hero {
+  margin-top: 10vh;
+}
+
+.sidebar {
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(0, 119, 182, 0.9);
+  color: #fbfcf8;
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 5rem;
+  display: none;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.sidebar__link:link, .sidebar__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fbfcf8;
+}
+.sidebar__btn:link, .sidebar__btn:visited {
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  background-color: #fbfcf8;
+  color: #0077b6;
+  border-radius: 11px;
+}
+
+.mobile-nav-icon {
+  display: none;
+}
+.mobile-nav-icon__menu {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 52em) {
+  .mobile-nav-icon__menu {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    color: #fbfcf8;
+  }
+}
+@media (max-width: 52em) {
+  .mobile-nav-icon__close {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    color: #fbfcf8;
+  }
+}
 
 .hero {
   transition: all 0.3s;
@@ -600,20 +682,6 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   color: #000;
-}
-
-.sticky .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 10vh;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-
-.sticky .section-hero {
-  margin-top: 10vh;
 }
 
 .treatment__img-box {
