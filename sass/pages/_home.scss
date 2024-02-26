@@ -10,6 +10,8 @@
     url(../img/hero.webp);
   background-size: cover;
   background-position: center;
+
+  transition: all 0.3s;
 }
 
 .section-about {
@@ -39,10 +41,17 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
+
+    @include respond(48em) {
+      padding: 0rem 3rem;
+    }
   }
 
   @include respond(69em) {
     padding: 6rem 3rem;
+  }
+  @include respond(48em) {
+    padding: 4rem 1rem;
   }
 }
 
@@ -86,6 +95,9 @@
     grid-template-rows: 3fr 2fr;
     gap: 4rem;
     align-items: center;
+    @include respond(42em) {
+      grid-template-rows: 3fr 1fr;
+    }
   }
 }
 

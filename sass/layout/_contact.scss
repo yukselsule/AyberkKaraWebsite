@@ -28,6 +28,15 @@
   @include respond(59em) {
     padding: 0 4rem;
   }
+  @include respond(48em) {
+    padding: 0rem 2rem;
+    gap: 2.8rem;
+  }
+  @include respond(42em) {
+    padding: 0 12rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .communication {

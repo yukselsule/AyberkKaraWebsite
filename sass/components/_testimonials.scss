@@ -6,13 +6,17 @@
   );
   display: flex;
 
-  width: 80rem;
-  height: 35rem;
+  width: 80%;
+  height: 70%;
   border-radius: 11px;
 
   @include centerContent;
 
   box-shadow: 0 1rem 3rem rgba($color-black, 0.15);
+
+  @include respond(59em) {
+    height: 60%;
+  }
 
   & button {
     font-size: 3rem;

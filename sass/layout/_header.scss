@@ -103,13 +103,13 @@
 }
 
 .mobile-nav-icon {
-  display: none;
-
   &__menu {
     position: absolute;
     top: 50%;
     right: 5%;
     transform: translate(-50%, -50%);
+
+    display: none;
 
     @include respond(52em) {
       display: block;
@@ -120,6 +120,7 @@
   }
 
   &__close {
+    display: none;
     @include respond(52em) {
       display: block;
       width: 4rem;
