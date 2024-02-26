@@ -209,14 +209,19 @@ body {
 .wrapper {
   background-image: linear-gradient(to bottom, rgba(204, 228, 240, 0.4), rgba(153, 201, 226, 0.4));
   display: flex;
-  width: 80rem;
-  height: 35rem;
+  width: 80%;
+  height: 70%;
   border-radius: 11px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 59em) {
+  .wrapper {
+    height: 60%;
+  }
 }
 .wrapper button {
   font-size: 3rem;
@@ -340,6 +345,19 @@ body {
 @media (max-width: 59em) {
   .contact-information {
     padding: 0 4rem;
+  }
+}
+@media (max-width: 48em) {
+  .contact-information {
+    padding: 0rem 2rem;
+    gap: 2.8rem;
+  }
+}
+@media (max-width: 42em) {
+  .contact-information {
+    padding: 0 12rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
@@ -635,14 +653,12 @@ body {
   border-radius: 11px;
 }
 
-.mobile-nav-icon {
-  display: none;
-}
 .mobile-nav-icon__menu {
   position: absolute;
   top: 50%;
   right: 5%;
   transform: translate(-50%, -50%);
+  display: none;
 }
 @media (max-width: 52em) {
   .mobile-nav-icon__menu {
@@ -651,6 +667,9 @@ body {
     height: 4rem;
     color: #fbfcf8;
   }
+}
+.mobile-nav-icon__close {
+  display: none;
 }
 @media (max-width: 52em) {
   .mobile-nav-icon__close {
@@ -661,9 +680,6 @@ body {
   }
 }
 
-.hero {
-  transition: all 0.3s;
-}
 .hero__text-box {
   animation-name: moveInLeft;
   animation-duration: 1s;
@@ -723,6 +739,7 @@ body {
   background-image: linear-gradient(110deg, rgba(204, 228, 240, 0.8) 0%, rgba(204, 228, 240, 0.7) 50%, rgba(153, 201, 226, 0.4) 100%), url(../img/hero.webp);
   background-size: cover;
   background-position: center;
+  transition: all 0.3s;
 }
 
 .section-about {
@@ -747,9 +764,19 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
 }
+@media (max-width: 48em) {
+  .section-treatments__main {
+    padding: 0rem 3rem;
+  }
+}
 @media (max-width: 69em) {
   .section-treatments {
     padding: 6rem 3rem;
+  }
+}
+@media (max-width: 48em) {
+  .section-treatments {
+    padding: 4rem 1rem;
   }
 }
 
@@ -786,6 +813,11 @@ body {
   grid-template-rows: 3fr 2fr;
   gap: 4rem;
   align-items: center;
+}
+@media (max-width: 42em) {
+  .section-contact__main {
+    grid-template-rows: 3fr 1fr;
+  }
 }
 
 .footer {
