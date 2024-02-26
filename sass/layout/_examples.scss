@@ -6,6 +6,11 @@
   border-radius: 11px;
   --position: 50%;
   box-shadow: 0 1rem 3rem rgba($color-black, 0.2);
+  @include respond(42em) {
+    &:last-child {
+      display: none;
+    }
+  }
 
   &__image-container {
     max-width: 800px;

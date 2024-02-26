@@ -12,6 +12,16 @@
   background-position: center;
 
   transition: all 0.3s;
+  @include respond(42em) {
+    background-image: radial-gradient(
+        rgba($color-primary-gradient-dark, 0.8) 0%,
+        rgba($color-primary-gradient-dark, 0.8) 30%,
+        rgba($color-primary-gradient-light, 0.6) 100%
+      ),
+      url(../img/mobilehero.png);
+  }
+  background-size: cover;
+  background-position: center;
 }
 
 .section-about {
@@ -29,6 +39,9 @@
     display: grid;
     grid-template-columns: 2fr 5fr;
     gap: 2rem;
+    @include respond(48em) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
@@ -44,6 +57,10 @@
 
     @include respond(48em) {
       padding: 0rem 3rem;
+    }
+    @include respond(42em) {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 6rem;
     }
   }
 
@@ -63,6 +80,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
+
+    @include respond(42em) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
 
@@ -116,6 +137,10 @@
 
     @include respond(59em) {
       padding: 2rem 4rem 4rem 4rem;
+    }
+    @include respond(38em) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 3fr;
     }
   }
 

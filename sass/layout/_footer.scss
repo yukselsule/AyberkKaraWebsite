@@ -1,6 +1,10 @@
 .footer-col {
   &:first-child {
     text-align: center;
+    @include respond(38em) {
+      grid-column: 1 / -1;
+      padding: 0 6rem;
+    }
   }
 
   & ul {
@@ -17,8 +21,12 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
   &__logo {
     width: 100%;
+    @include respond(38em) {
+      height: 100%;
+    }
   }
 }
 

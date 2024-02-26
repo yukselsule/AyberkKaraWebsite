@@ -13,6 +13,12 @@
     border-radius: 11px;
     background-color: rgba($color-primary-light, 0.8);
 
+    @include respond(42em) {
+      @include centerContent;
+      width: 60%;
+      text-align: center;
+    }
+
     &__text {
       margin: 1.6rem 0;
       font-size: 1.6rem;

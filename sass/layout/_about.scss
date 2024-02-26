@@ -5,6 +5,15 @@
     width: 100%;
     border-radius: 9px;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
+
+    @include respond(48em) {
+      text-align: center;
+      width: 50%;
+      height: auto;
+    }
+  }
+  @include respond(48em) {
+    text-align: center;
   }
 }
 
