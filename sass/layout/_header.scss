@@ -5,6 +5,14 @@
   grid-template-columns: 1fr 2fr;
   position: relative;
 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  @include respond(42em) {
+    height: 6rem;
+  }
+
   &__logo-box {
     height: 10vh;
     display: flex;
@@ -42,19 +50,19 @@
 }
 // STICKY NAV
 
-.sticky .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 10vh;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-}
+// .sticky .header {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   height: 10vh;
+//   width: 100%;
+//   z-index: 1000;
+//   box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+// }
 
-.sticky .section-hero {
-  margin-top: 10vh;
-}
+// .sticky .section-hero {
+//   margin-top: 10vh;
+// }
 
 // SIDEBAR
 

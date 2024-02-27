@@ -625,6 +625,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+@media (max-width: 42em) {
+  .header {
+    height: 6rem;
+  }
 }
 .header__logo-box {
   height: 10vh;
@@ -658,20 +666,6 @@ body {
   .header__main-nav-link:link, .header__main-nav-link:visited {
     display: none;
   }
-}
-
-.sticky .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 10vh;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-
-.sticky .section-hero {
-  margin-top: 10vh;
 }
 
 .sidebar {
