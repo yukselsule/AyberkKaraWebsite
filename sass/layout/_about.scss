@@ -40,6 +40,15 @@
       font-size: 1.6rem;
       font-weight: 500;
       line-height: 1.5;
+
+      @include respond(38em) {
+        padding-left: 3rem;
+      }
+    }
+
+    @include respond(38em) {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

@@ -76,7 +76,7 @@ const testimonials = [
     image:
       "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049569.jpg?w=740&t=st=1708348874~exp=1708349474~hmac=bbb6abec5d430b5e8ba4028e7a7e300c5ba23d65ee4928f9d09b43720cf75b36",
     testimonial:
-      "Ayberk Bey’e arkadaş tavsiyesi ile ulaştım ve çok memnun kaldım. Güler yüzü ve samimiyeti ile yapacağı işlemleri detaylıca bilgilendirerek anlatması çok güvende hissettirdi. Ayni şekilde işlem sonrası prosedür hakkında da çok net bilgilendirildim ve tavsiyeleri sayesinde hiç bir sorun yaşamadım. Diş taşı temizliği ve bir kaç dolgu yaptırdım, bundan sonraki işlemlerim için de kendisiyle devam etmeyi düşünüyorum.",
+      "Ayberk Bey’e arkadaş tavsiyesi ile ulaştım ve çok memnun kaldım. Güler yüzü ve samimiyeti ile yapacağı işlemleri detaylıca bilgilendirerek anlatması çok güvende hissettirdi. Bundan sonraki işlemlerim için de kendisiyle devam etmeyi düşünüyorum.",
   },
   {
     name: "K...",
