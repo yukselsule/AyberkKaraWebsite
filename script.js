@@ -1,24 +1,5 @@
 "use strict";
 
-// Sticky navigation
-
-// const sectionHeroEl = document.querySelector(".section-hero");
-
-// const obs = new IntersectionObserver(
-//   function (entries) {
-//     const ent = entries[0];
-//     if (ent.isIntersecting === false) {
-//       document.body.classList.add("sticky");
-//     }
-//     if (ent.isIntersecting === true) {
-//       document.body.classList.remove("sticky");
-//     }
-//   },
-//   { root: null, threshold: 0, rootMargin: "-67px" }
-// );
-
-// obs.observe(sectionHeroEl);
-
 // Mobile nav
 
 const menuBtn = document.querySelector(".menu");
