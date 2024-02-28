@@ -4,17 +4,18 @@
 
 const menuBtn = document.querySelector(".menu");
 const closeBtn = document.querySelector(".close");
-const sidebar = document.querySelector(".sidebar");
+const mobileNav = document.querySelector(".mobile-nav");
+// const mobileNavLink = document.querySelectorAll(".mobile-nav__link");
 
-const showSidebar = function () {
-  sidebar.style.display = "flex";
+const showMobileNav = function () {
+  mobileNav.style.display = "flex";
 };
-const closeSidebar = function () {
-  sidebar.style.display = "none";
+const closeMobileNav = function () {
+  mobileNav.style.display = "none";
 };
 
-menuBtn.addEventListener("click", showSidebar);
-closeBtn.addEventListener("click", closeSidebar);
+menuBtn.addEventListener("click", showMobileNav);
+closeBtn.addEventListener("click", closeMobileNav);
 
 //  Smooth scrolling
 
@@ -32,6 +33,7 @@ document.querySelectorAll("a:link").forEach((link) => {
     } else {
       e.preventDefault();
     }
+    closeMobileNav();
   });
 });
 

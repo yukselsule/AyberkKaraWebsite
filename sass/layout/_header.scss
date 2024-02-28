@@ -58,32 +58,17 @@
     }
   }
 }
-// STICKY NAV
 
-// .sticky .header {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   height: 10vh;
-//   width: 100%;
-//   z-index: 1000;
-//   box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-// }
+// Mobile Nav
 
-// .sticky .section-hero {
-//   margin-top: 10vh;
-// }
-
-// SIDEBAR
-
-.sidebar {
+.mobile-nav {
   list-style: none;
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100%;
-  z-index: 999;
+  z-index: 111;
   backdrop-filter: blur(10px);
   background-color: rgba($color-primary, 0.9);
   color: $color-white;
@@ -104,15 +89,17 @@
   &__link:link,
   &__link:visited {
     display: inline-block;
-    text-decoration: none;
     color: $color-white;
+    text-decoration: none;
   }
 
   &__btn {
     &:link,
     &:visited {
+      text-decoration: none;
       padding: 1rem 2rem;
       font-size: 3rem;
+      font-weight: 600;
       background-color: $color-white;
       color: $color-primary;
       border-radius: 11px;

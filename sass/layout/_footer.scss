@@ -2,9 +2,14 @@
   &:first-child {
     text-align: center;
     @include respond(38em) {
+      padding: 0 4rem;
       grid-row: 2;
       grid-column: 1 / -1;
-      padding: 0 6rem;
+      align-self: center;
+      justify-self: center;
+    }
+    @include respond(32em) {
+      padding: 0;
     }
   }
 
@@ -15,21 +20,6 @@
     gap: 2rem;
   }
 }
-
-// .footer-logo-box {
-//   height: 10vh;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   overflow: hidden;
-
-//   &__logo {
-//     width: 100%;
-//     @include respond(38em) {
-//       height: 100%;
-//     }
-//   }
-// }
 
 .footer-logo-box {
   overflow: hidden;

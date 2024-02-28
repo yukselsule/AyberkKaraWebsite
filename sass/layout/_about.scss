@@ -11,6 +11,9 @@
       width: 50%;
       height: auto;
     }
+    @include respond(42em) {
+      width: 75%;
+    }
   }
   @include respond(48em) {
     text-align: center;
