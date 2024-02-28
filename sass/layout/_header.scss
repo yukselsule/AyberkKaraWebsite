@@ -1,8 +1,8 @@
 .header {
   height: 10vh;
   background-color: $color-primary;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  justify-content: space-between;
   position: relative;
 
   position: sticky;
@@ -14,13 +14,23 @@
   }
 
   &__logo-box {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
+
+    @include respond(32em) {
+      flex-grow: 2;
+      flex-shrink: 0;
+    }
+
     &__logo {
-      width: 75%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90%;
+      &-img {
+        display: block;
+        height: 90%;
+        // width: 80%;
+      }
     }
   }
 
