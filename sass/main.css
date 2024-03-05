@@ -327,7 +327,7 @@ body {
   grid-template-columns: 2fr 3fr;
   gap: 2rem;
   padding: 2rem;
-  background-color: rgba(97, 103, 122, 0.2);
+  background-color: rgba(160, 164, 175, 0.2);
   border-radius: 9px;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
 }
@@ -612,7 +612,7 @@ body {
   text-decoration: none;
 }
 .footer-link:hover, .footer-link:active {
-  color: #61677a;
+  color: #a0a4af;
 }
 
 .footer__contact-list {
@@ -631,7 +631,7 @@ body {
   color: inherit;
 }
 .footer__contact-list__item:hover, .footer__contact-list__item:active {
-  color: #61677a;
+  color: #a0a4af;
 }
 
 .copyright-box {
@@ -825,7 +825,7 @@ body {
 }
 .treatment__text-box {
   padding: 1.2rem 2rem;
-  background-color: #61677a;
+  background-color: #a0a4af;
   border-radius: 11px;
   width: 75%;
   text-align: center;
