@@ -40,7 +40,7 @@ html {
 
 body {
   box-sizing: border-box;
-  color: #6c3428;
+  color: #344955;
   position: relative;
 }
 
@@ -49,7 +49,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #6c3428;
+  color: #344955;
 }
 
 .heading-primary {
@@ -216,7 +216,7 @@ body {
 }
 
 .wrapper {
-  background-image: linear-gradient(to bottom, rgba(234, 244, 245, 0.4), rgba(192, 223, 224, 0.4));
+  background-image: linear-gradient(to bottom, rgba(234, 244, 245, 0.4), rgba(213, 234, 234, 0.4));
   display: flex;
   width: 80%;
   height: 70%;
@@ -266,7 +266,7 @@ body {
   align-items: center;
 }
 .testimonial-container p {
-  color: #6c3428;
+  color: #344955;
   text-align: center;
   font-size: 1.8rem;
   font-weight: 500;
@@ -327,7 +327,7 @@ body {
   grid-template-columns: 2fr 3fr;
   gap: 2rem;
   padding: 2rem;
-  background-color: rgba(160, 164, 175, 0.2);
+  background-color: rgba(154, 208, 194, 0.2);
   border-radius: 9px;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
 }
@@ -362,7 +362,7 @@ body {
   border-radius: 13px;
 }
 .contact-information-box {
-  background-image: linear-gradient(to right bottom, #eaf4f5, #c0dfe0);
+  background-image: linear-gradient(to right bottom, #eaf4f5, #d5eaea);
   padding: 3rem 4rem;
   border-radius: 13px;
   background-color: #57aaab;
@@ -612,7 +612,7 @@ body {
   text-decoration: none;
 }
 .footer-link:hover, .footer-link:active {
-  color: #a0a4af;
+  color: #9ad0c2;
 }
 
 .footer__contact-list {
@@ -631,7 +631,7 @@ body {
   color: inherit;
 }
 .footer__contact-list__item:hover, .footer__contact-list__item:active {
-  color: #a0a4af;
+  color: #9ad0c2;
 }
 
 .copyright-box {
@@ -825,7 +825,7 @@ body {
 }
 .treatment__text-box {
   padding: 1.2rem 2rem;
-  background-color: #a0a4af;
+  background-color: #9ad0c2;
   border-radius: 11px;
   width: 75%;
   text-align: center;
@@ -843,14 +843,14 @@ body {
 .section-hero {
   position: relative;
   height: 90vh;
-  background-image: linear-gradient(110deg, rgba(234, 244, 245, 0.8) 0%, rgba(234, 244, 245, 0.7) 50%, rgba(192, 223, 224, 0.4) 100%), url(../img/hero.webp);
+  background-image: linear-gradient(110deg, rgba(234, 244, 245, 0.8) 0%, rgba(234, 244, 245, 0.7) 50%, rgba(213, 234, 234, 0.4) 100%), url(../img/hero.webp);
   background-size: cover;
   background-position: center;
   transition: all 0.3s;
 }
 @media (max-width: 42em) {
   .section-hero {
-    background-image: radial-gradient(rgba(192, 223, 224, 0.8) 0%, rgba(192, 223, 224, 0.8) 30%, rgba(234, 244, 245, 0.6) 100%), url(../img/mobilehero.webp);
+    background-image: radial-gradient(rgba(213, 234, 234, 0.8) 0%, rgba(213, 234, 234, 0.8) 30%, rgba(234, 244, 245, 0.6) 100%), url(../img/mobilehero.webp);
     background-size: cover;
     background-position: center;
     height: 70vh;
