@@ -791,6 +791,16 @@ body {
     text-align: center;
   }
 }
+@media (max-width: 23em) {
+  .hero__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    text-align: center;
+  }
+}
 .hero__text-box__text {
   margin: 1.6rem 0;
   font-size: 1.7rem;

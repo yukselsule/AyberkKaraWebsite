@@ -62,4 +62,9 @@
       @content;
     }
   }
+  @if $breakpoint == 23em {
+    @media (max-width: 23em) {
+      @content;
+    }
+  }
 }
