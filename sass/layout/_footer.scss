@@ -50,6 +50,7 @@
   &:hover,
   &:active {
     color: $color-secondary;
+    text-decoration: underline;
   }
 }
 
@@ -61,7 +62,7 @@
     display: block;
     width: 2.8rem;
     height: 2.8rem;
-    color: $color-primary-light;
+    color: $color-secondary;
   }
 
   &__item {
