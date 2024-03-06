@@ -17,4 +17,4 @@
   <li>JavaScript</li>
 </ul>
 
-You can reach the website <a target="blank" href="https://ayberkara.com/">here<a>
+You can reach the website <a href="https://ayberkara.com/">here<a>
