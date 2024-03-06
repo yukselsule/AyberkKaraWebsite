@@ -13,13 +13,12 @@
     height: 6rem;
   }
 
+  @include respond(38em) {
+    justify-self: flex-start;
+  }
+
   &__logo-box {
     overflow: hidden;
-
-    @include respond(32em) {
-      flex-grow: 2;
-      flex-shrink: 0;
-    }
 
     &__logo {
       display: flex;
@@ -44,6 +43,9 @@
       align-items: center;
       font-size: 1.8rem;
       font-weight: 600;
+      @include respond(57em) {
+        display: none;
+      }
     }
     &-link:link,
     &-link:visited {
@@ -51,10 +53,6 @@
       text-decoration: none;
       color: $color-white;
       transition: all 0.3s;
-
-      @include respond(52em) {
-        display: none;
-      }
     }
 
     &-link:hover,
@@ -122,7 +120,7 @@
 
     display: none;
 
-    @include respond(52em) {
+    @include respond(57em) {
       display: block;
       width: 4rem;
       height: 4rem;
@@ -132,7 +130,7 @@
 
   &__close {
     display: none;
-    @include respond(52em) {
+    @include respond(57em) {
       display: block;
       width: 4rem;
       height: 4rem;
