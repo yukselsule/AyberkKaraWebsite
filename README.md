@@ -12,7 +12,8 @@
 <p>This website is built using modern web development technologies for optimal performance and user experience.</p>
 <ul>
 <li>HTML5</li>
-<li>SCSS<li><li>CSS3</li>
+<li>SCSS</li>
+<li>CSS3</li>
 <li>JavaScript</li>
 </ul>
 
