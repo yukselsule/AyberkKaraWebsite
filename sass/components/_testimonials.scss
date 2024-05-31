@@ -7,7 +7,7 @@
   display: flex;
 
   width: 80%;
-  height: 70%;
+  height: 60%;
   border-radius: 11px;
 
   @include centerContent;
@@ -15,7 +15,7 @@
   box-shadow: 0 1rem 3rem rgba($color-black, 0.15);
 
   @include respond(59em) {
-    height: 60%;
+    height: 80%;
   }
 
   & button {
@@ -47,8 +47,8 @@
 .testimonial-container {
   position: relative;
 
-  width: 85%;
-  height: 100%;
+  width: 95%;
+  height: 80%;
   margin: auto;
   padding: 1rem 1rem;
 
@@ -66,7 +66,7 @@
     margin-bottom: 2rem;
 
     @include respond(64em) {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
   }
 
@@ -75,11 +75,19 @@
     margin: 1rem auto 1rem auto;
     border-radius: 50%;
     width: 5rem;
+
+    @include respond(64em) {
+      width: 3rem;
+    }
   }
 
   & h3 {
     color: $color-primary-dark;
     font-size: 1.4rem;
     text-align: center;
+
+    @include respond(64em) {
+      font-size: 1rem;
+    }
   }
 }

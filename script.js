@@ -77,7 +77,7 @@ const testimonials = [
     image:
       "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049569.jpg?w=740&t=st=1708348874~exp=1708349474~hmac=bbb6abec5d430b5e8ba4028e7a7e300c5ba23d65ee4928f9d09b43720cf75b36",
     testimonial:
-      "Ayberk Bey’e arkadaş tavsiyesi ile ulaştım ve çok memnun kaldım. Güler yüzü ve samimiyeti ile yapacağı işlemleri detaylıca bilgilendirerek anlatması çok güvende hissettirdi. Bundan sonraki işlemlerim için de kendisiyle devam etmeyi düşünüyorum.",
+      "Ayberk Bey’e arkadaş tavsiyesi ile ulaştım ve çok memnun kaldım. Güler yüzü ve samimiyeti ile yapacağı işlemleri detaylıca bilgilendirerek anlatması çok güvende hissettirdi. Ayni şekilde işlem sonrası prosedür hakkında da çok net bilgilendirildim ve tavsiyeleri sayesinde hiç bir sorun yaşamadım. Diş taşı temizliği ve bir kaç dolgu yaptırdım, bundan sonraki işlemlerim için de kendisiyle devam etmeyi düşünüyorum.",
   },
   {
     name: "K...",
@@ -113,6 +113,27 @@ const testimonials = [
       "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049569.jpg?w=740&t=st=1708348874~exp=1708349474~hmac=bbb6abec5d430b5e8ba4028e7a7e300c5ba23d65ee4928f9d09b43720cf75b36",
     testimonial:
       "Ayberk Bey'e Annemin diş problemleri nedeniyle başvurduk. Kanal tedavisi diş temizliği dolgu ve implant işlemleri uygulandı. Kendisi çok ilgili çok saygılı ve profesyonel. Eşim ve çocuklarımı da tedavi etti. Herkese rahatlıkla tavsiye ediyorum.",
+  },
+  {
+    name: "İ...",
+    image:
+      "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049569.jpg?w=740&t=st=1708348874~exp=1708349474~hmac=bbb6abec5d430b5e8ba4028e7a7e300c5ba23d65ee4928f9d09b43720cf75b36",
+    testimonial:
+      "Senelerdir beklediğim plak tedavisi için Ayberk Hocamı buldum. Panaromik Röntgen sonrası tedavi için gerekli dolgu işlemleri yapıldı. Tedavinin her aşamasında doktorun bilgilendirmesi ile stressiz ve de acısız bir şekilde işlemler tamamlandı, aklımdaki tüm sorular cevaplandı. Bu süreçte güler yüzleri ve de ilgili hasta takipleri çok yardımcı oldu diyebilirim.",
+  },
+  {
+    name: "K...",
+    image:
+      "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049569.jpg?w=740&t=st=1708348874~exp=1708349474~hmac=bbb6abec5d430b5e8ba4028e7a7e300c5ba23d65ee4928f9d09b43720cf75b36",
+    testimonial:
+      "Ayberk Bey son derece güleryüzlü, alanında bilgili ve tecrübeli bir uzman. Öncelikle şeffaf plak tedavi sürecimi detaylı bir şekilde açıkladı ve tedavi hakkındaki tüm sorularımı özenle yanıtladı. Dişçi fobisi olan biri olmama rağmen onun bu iletişimi daha en başından kendisine güvenmemi sağladı. Ardından tedavi aşamasına geçildi ve çürük dişlerime dolgu yapıldı, diş taşlarım temizlendi. Sonrasında ölçülerim alındı ve fotoğraflar çekildi. Süreç boyunca iletişimi ve özenli çalışması dişçi fobimi yenmemi sağladı diyebilirim. Herkese tavsiye ediyorum, özellikle benim gibi fobisi yüzünden yıllarca erteleyenlere :)",
+  },
+  {
+    name: "G...",
+    image:
+      "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049569.jpg?w=740&t=st=1708348874~exp=1708349474~hmac=bbb6abec5d430b5e8ba4028e7a7e300c5ba23d65ee4928f9d09b43720cf75b36",
+    testimonial:
+      "Ayberk hocama tavsiye üzerine görüşmeye gittiğimde ilgisi, enerjisi, alanına olan bilgi yetkinliği ve hoşgörülü tavırlarıyla tedavime hemen başlamak için gereken cesareti içimde oluşturdu. Dişlerimdeki düzen ve orantı problemlerinden dolayı ortodontik tedavi için plan oluşturup tedavi öncesi gereken tetkik ve işlemleri uyguladı. Diş tellerim takılalı bir hafta oldu ve süreç beklediğimden konforlu geçti. Kliniği ise tamamen hastalarının rahat hissedebileceği şekilde hazırlanmış. İyi ki yollarımız kesişmiş herkese kalben tavsiye ediyorum.",
   },
 ];
 

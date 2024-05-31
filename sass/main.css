@@ -219,7 +219,7 @@ body {
   background-image: linear-gradient(to bottom, rgba(232, 238, 239, 0.4), rgba(209, 222, 222, 0.4));
   display: flex;
   width: 80%;
-  height: 70%;
+  height: 60%;
   border-radius: 11px;
   position: absolute;
   top: 50%;
@@ -229,7 +229,7 @@ body {
 }
 @media (max-width: 59em) {
   .wrapper {
-    height: 60%;
+    height: 80%;
   }
 }
 .wrapper button {
@@ -256,8 +256,8 @@ body {
 
 .testimonial-container {
   position: relative;
-  width: 85%;
-  height: 100%;
+  width: 95%;
+  height: 80%;
   margin: auto;
   padding: 1rem 1rem;
   display: flex;
@@ -275,7 +275,7 @@ body {
 }
 @media (max-width: 64em) {
   .testimonial-container p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 .testimonial-container img {
@@ -284,10 +284,20 @@ body {
   border-radius: 50%;
   width: 5rem;
 }
+@media (max-width: 64em) {
+  .testimonial-container img {
+    width: 3rem;
+  }
+}
 .testimonial-container h3 {
   color: #164748;
   font-size: 1.4rem;
   text-align: center;
+}
+@media (max-width: 64em) {
+  .testimonial-container h3 {
+    font-size: 1rem;
+  }
 }
 
 .about__image-box {
